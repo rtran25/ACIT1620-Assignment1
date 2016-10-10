@@ -20,13 +20,13 @@
             background-size:cover;
         }
         
-        #middle_1 {
+        #middle1 {
             width:100vw;
             height:auto;
             background-color:gray;
         }
         
-        #middle_2 {
+        #middle2 {
             width:100vw;
             height:800px;
             background-color:black;
@@ -94,7 +94,7 @@
             top:1280px;
         }
         
-        #profile_1 {
+        #profile1 {
             padding:5px;
             position:absolute;
             left:12.5%;
@@ -104,7 +104,7 @@
             z-index:2;
         }
         
-        #profile_2 {
+        #profile2 {
             padding:5px;
             position:absolute;
             left:28.8%;
@@ -114,7 +114,7 @@
             z-index:2;
         }
         
-        #profile_3 {
+        #profile3 {
             padding:5px;
             position:absolute;
             left:45.2%;
@@ -124,7 +124,7 @@
             z-index:2;
         }
         
-        #profile_4 {
+        #profile4 {
             padding:5px;
             position:absolute;
             right:34.8%;
@@ -134,7 +134,7 @@
             z-index:2;
         }
         
-        #profile_5 {
+        #profile5 {
             padding:5px;
             position:absolute;
             right:18.4%;
@@ -144,7 +144,7 @@
             z-index:2;
         }
         
-        #profile_6 {
+        #profile6 {
             padding:5px;
             position:absolute;
             right:2%;
@@ -154,7 +154,7 @@
             z-index:2;
         }
         
-        #profile_7 {
+        #profile7 {
             padding:2px;
             position:absolute;
             left:37%;
@@ -173,7 +173,7 @@
             <img class='ava' src="http://placekitten.com/200/200" />
         </div>
         
-        <div id="middle_1">
+        <div id="middle1">
             <img class='thumb1' src='http://placekitten.com/100/100' />
             <img class='thumb1' src='http://placekitten.com/100/100' />
             <img class='thumb1' src='http://placekitten.com/100/100' />
@@ -182,29 +182,29 @@
             <img class='thumb1' src='http://placekitten.com/100/100' />
         </div>
         
-        <div id="profile_1">
-            <h3>Work 1</h3>        
+        <div id="profile1">
+            <button id="button1">Work 1</button>
         </div>
-        <div id="profile_2">
-            <h3>Work 2</h3>        
+        <div id="profile2">
+            <button id="button2">Work 2</button>
         </div>
-        <div id="profile_3">
-            <h3>Work 3</h3>        
+        <div id="profile3">
+            <button id="button3">Work 3</button>
         </div>
-        <div id="profile_4">
-            <h3>Wprl 4</h3>        
+        <div id="profile4">
+            <button id="button4">Work 4</button>
         </div>
-        <div id="profile_5">
-            <h3>Work 5</h3>        
+        <div id="profile5">
+            <button id="button5">Work 5</button>
         </div>
-        <div id="profile_6">
-            <h3>Work 6</h3>        
+        <div id="profile6">
+            <button id="button6">Work 6</button>
         </div>
-        <div id="profile_7">
+        <div id="profile7">
             <h3>Fluffy Smellypants</h3>        
         </div>
         
-        <div id="middle_2">
+        <div id="middle2">
             <h3 class='blog'>Blog</h3>
             <h3 class="blogs">The life and times of Fluffy, otherwise known as GOD. He has <br> majestically taken over and ruled the world on a number of occasions <br> and has grown bored of it. The thrill of purging the world of all <br> destructive behaviour has now turned to be a chore of necessity. Growing <br> tired, Fluffy has commenced the destruction of the world every <br> 100 thousand years. The time is nearing...</h3>
             <img class='thumb2' src='http://placekitten.com/600/500' />
@@ -213,6 +213,38 @@
         <div id="bottom">
             <h3 class='leave'>Goodbye Scrub</h3>
         </div>
+        
+        <script>
+            
+            var prof1 = document.getElementById("profile1");
+            var prof2 = document.getElementById("profile2");
+            var prof3 = document.getElementById("profile3");
+            var prof4 = document.getElementById("profile4");
+            var prof5 = document.getElementById("profile5");
+            var prof6 = document.getElementById("profile6");
+            var topDiv = document.getElementById("top");
+            var buttonDiv = document.getElementById("middle1");
+            var blogDiv = document.getElementById("middle2");
+            
+            prof1.onclick = function() {
+                topDiv.style.width = "50vw";
+                topDiv.style.height = "30vh";
+            }
+            
+            prof2.onclick = function() {
+                topDiv.style.width = "100vw";
+                topDiv.style.height = "500px";
+            }
+            
+            prof3.onclick = function() {
+                blogDiv.style.backgroundColor = "green";
+            }
+            
+            prof4.onclick = function() {
+                buttonDiv.style.backgroundColor = "blue";
+            }
+            
+        </script>
         
     </body>
     
