@@ -18,7 +18,7 @@
                 background-color:blueviolet;
             }
             .blog {
-                font-size:10px;
+                font-size:25px;
                 color:aqua;
             }
         }
@@ -30,8 +30,27 @@
                 background-color:darkgreen;
             }
             .blog {
-                font-size:25px;
+                font-size:35px;
                 color:fuchsia;
+            }
+        }
+        @media only screen and (min-width:800px){
+            #middle1 {
+                width:100vw;
+                height:auto;
+                background-color:gray;
+            }
+            #middle2 {
+                width:100vw;
+                height:800px;
+                background:black;
+            }
+            .blog {
+                position: relative;
+                left:33%;
+                top:90px;
+                color:gray;
+                font-size:45px;
             }
         }
     
@@ -43,18 +62,6 @@
             background-repeat: no-repeat;
             background-position:center center;
             background-size:cover;
-        }
-        
-        #middle1 {
-            width:100vw;
-            height:auto;
-            background-color:gray;
-        }
-        
-        #middle2 {
-            width:100vw;
-            height:800px;
-            background-color:black;
         }
         
         #bottom {
@@ -81,14 +88,6 @@
             top:80%;
             color:rgba(255,255,255,0.5);
             font-size:40px;
-        }
-        
-        .blog {
-            position:relative;
-            left:33%;
-            top:90px;
-            color:gray;
-            font-size:45px;
         }
         
         .blogs {
